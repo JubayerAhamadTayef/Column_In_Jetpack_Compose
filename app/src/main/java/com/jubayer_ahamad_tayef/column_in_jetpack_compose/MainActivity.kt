@@ -32,55 +32,55 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+}
 
-    @Composable
-    fun MyColumn(modifier: Modifier) {
-        Column(
-            modifier = modifier
-                .fillMaxSize()
-                .padding(5.dp),
-            verticalArrangement = Arrangement.SpaceBetween
-        ) {
-            Spacer(
-                modifier = Modifier
-                    .size(100.dp)
-                    .background(MaterialTheme.colorScheme.primary)
-            )
-            Spacer(
-                modifier = Modifier
-                    .size(100.dp)
-                    .background(MaterialTheme.colorScheme.primary)
-                    .align(Alignment.CenterHorizontally)
-            )
-            Spacer(
-                modifier = Modifier
-                    .size(100.dp)
-                    .background(MaterialTheme.colorScheme.primary)
-                    .align(Alignment.End)
-            )
-            Spacer(
-                modifier = Modifier
-                    .size(100.dp)
-                    .background(MaterialTheme.colorScheme.primary)
-                    .align(Alignment.End)
-            )
-            Spacer(
-                modifier = Modifier
-                    .size(100.dp)
-                    .background(MaterialTheme.colorScheme.primary)
-                    .align(Alignment.CenterHorizontally)
-            )
-            Spacer(
-                modifier = Modifier
-                    .size(100.dp)
-                    .background(MaterialTheme.colorScheme.primary)
-            )
-        }
+@Composable
+fun MyColumn(modifier: Modifier) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .padding(5.dp),
+        verticalArrangement = Arrangement.SpaceBetween
+    ) {
+        Spacer(
+            modifier = Modifier
+                .size(100.dp)
+                .background(MaterialTheme.colorScheme.primary)
+        )
+        Spacer(
+            modifier = Modifier
+                .size(100.dp)
+                .background(MaterialTheme.colorScheme.primary)
+                .align(Alignment.CenterHorizontally)
+        )
+        Spacer(
+            modifier = Modifier
+                .size(100.dp)
+                .background(MaterialTheme.colorScheme.primary)
+                .align(Alignment.End)
+        )
+        Spacer(
+            modifier = Modifier
+                .size(100.dp)
+                .background(MaterialTheme.colorScheme.primary)
+                .align(Alignment.End)
+        )
+        Spacer(
+            modifier = Modifier
+                .size(100.dp)
+                .background(MaterialTheme.colorScheme.primary)
+                .align(Alignment.CenterHorizontally)
+        )
+        Spacer(
+            modifier = Modifier
+                .size(100.dp)
+                .background(MaterialTheme.colorScheme.primary)
+        )
     }
+}
 
-    @Preview(showSystemUi = true)
-    @Composable
-    fun MyColumnPreview() {
-        MyColumn(Modifier.padding(5.dp))
-    }
+@Preview(showSystemUi = true)
+@Composable
+fun MyColumnPreview() {
+    MyColumn(Modifier.padding(5.dp))
 }
